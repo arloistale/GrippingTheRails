@@ -1,6 +1,13 @@
-<% provide(:title, "Home") %>
-<h1>Welcome to CornyFlakes!</h1>
-<p>
-  This site is currently under construction.
-  For more information, click <a href="http://mrcornman.com/">here</a>. Thanks :)
-</p>
+<div class="center jumbotron">
+  <h1>Welcome to CornyFlakes!</h1>
+
+  <p>
+    This site is currently under construction.
+    For more information, click <a href="http://mrcornman.com/">here</a>. Thanks :)
+  </p>
+  
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
