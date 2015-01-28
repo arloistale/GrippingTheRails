@@ -1,0 +1,16 @@
+<h1>Corny Flakes</h1>
+
+<p><%= @user.name %>,</p>
+
+<p>
+Welcome to CornyFlakes! We're so excited to have you with us!
+We know you're going to bring a world of laughter to our community. Don't disappoint us ;)
+</p>
+
+<p>
+There's just one step left before you join us.
+It's simple, just click the link below to confirm your account!
+</p>
+
+<%= link_to "Confirm", edit_account_activation_url(@user.activation_token,
+                                                  email: @user.email) %>
